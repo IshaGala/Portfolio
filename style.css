@@ -488,7 +488,8 @@ section{
     color: #0ef;
 }
 .portfolio-content{
-    display: grid;
+    display: flex;
+    gap: 10px;
     grid-template-columns: repeat(auto-fit,minmax(359px,auto));    
 }
 .row{
@@ -498,37 +499,40 @@ section{
     cursor: pointer;
     margin-left: 150px;
 }
+.square {
+  width: 400px;
+  height: 400px;
+}
 .row img{
     width: 100%;
     border-radius: 8px;
     display: block;
     transition: transform 0.5s;
 }
-.layer{
+.layer {
     width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0,0,0,0.1),#0ef);
+    height: 100%; /* full height instead of just hover expansion */
+    background: rgba(0, 0, 0, 0.6);
     position: absolute;
-    border-radius: 8px;
     left: 0;
     bottom: 0;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0 40px;
-    transition: height 0.5s;      
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 .layer h5{
-    color: #000;
+    color: #ededed;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
 }
 .layer p{
-    color: #000;
+    color: #ededed;
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -547,8 +551,8 @@ section{
 .row:hover img{
     transform: scale(1.1);
 }
-.row:hover .layer{
-    height: 100%;
+.row:hover .layer {
+    opacity: 1;
 }
 .contact{
     display: grid;
