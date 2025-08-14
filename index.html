@@ -12,15 +12,17 @@
     <header class="header">
         <a href="#" class="logo" >Isha Gala</a>
 
-        <nav class="navbar" >
+        <nav class="navbar">
             <a href="#home" style="--i:1" class="active">Home</a>
             <a href="#about" style="--i:2">About</a>
-            <a href="#services" style="--i:3">Skill</a>
-            <a href="#skills" style="--i:4">Portfolio</a>
-            <a href="#contact" style="--i:5">Contact</a>
+            <a href="#services" style="--i:3">Services</a>
+            <a href="#skills" style="--i:4">Skills</a>
+            <a href="#projects" style="--i:5">Projects</a>
+            <a href="#contact" style="--i:6">Contact</a>
         </nav>
+
     </header>   
-    <section class="home">
+    <section class="home" id="home">
         <div class="home-content">
             <h3>Hello,it's Me</h3>
             <h1>Isha Gala</h1>
@@ -35,7 +37,10 @@
                     <i class='bx bxl-github'></i>
                 </a>
             </div>
-            <a href="#" class="btn-box">More About Me</a>
+            <a href="https://www.linkedin.com/in/isha-gala-224213287/" target="_blank" class="btn-box">
+                More About Me
+            </a>
+
         </div>
         <span class="home-imgHover"></span>
     </section>
@@ -92,100 +97,57 @@
     </section>
 
     <h1 class="sub-title">My <span>Skills</span></h1>
-    <section>
-        <div class="container1" id="skills">
-            <h1 class="heading1">Technical Skills</h1>
-            <div class="Technical-bars">
-                <div class="bar"><i style="color: #69bcbc" class='bx bxl-react'></i>
-                    <div class="info">
-                        <span>React.js</span>
-                    </div>
-                    <div class="progress-line react">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #3c873a" class='bx bxl-nodejs'></i>
-                    <div class="info">
-                        <span>Node.js</span>
-                    </div>
-                    <div class="progress-line nodejs">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #4db33d" class='bx bxl-mongodb'></i>
-                    <div class="info">
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="progress-line mongodb">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #f89820" class='bx bxl-java'></i>
-                    <div class="info">
-                        <span>Java</span>
-                    </div>
-                    <div class="progress-line java">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="color: #69bcbc" class='bx bxl-javascript'></i>
-                    <div class="info">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="progress-line javascript">
-                        <span></span>
-                    </div>
-                </div>
-            </div>
+    <section class="skills-section" id="skills">
+        <div class="skills-container">
+    <!-- Technical Skills -->
+    <div class="skills-card skills-card-1">
+        <h3>Technical Skills</h3>
+        <p><strong>Languages:</strong></p>
+        <div class="skills-tags">
+            <span>Java</span><span>C</span><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
         </div>
-        <div class="container1">
-  <h1 class="heading1">Professional Skills</h1>
-  <div class="radial-bars-wrapper">
-    <!-- Skill 1 -->
-    <div class="radial-bars">
-      <svg viewBox="0 0 200 200">
-        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-      </svg>
-      <div class="percentage">90%</div>
-      <div class="text">Creativity</div>
+        
+        <p><strong>Libraries:</strong></p>
+        <div class="skills-tags">
+            <span>React.js</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+        </div>
+        
+        <p><strong>Databases/Cloud:</strong></p>
+        <div class="skills-tags">
+            <span>MongoDB</span><span>MySQL</span>
+        </div>
+        
+        <p><strong>Web Dev Tools:</strong></p>
+        <div class="skills-tags">
+            <span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span>
+        </div>
     </div>
 
-    <!-- Skill 2 -->
-    <div class="radial-bars">
-      <svg viewBox="0 0 200 200">
-        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-      </svg>
-      <div class="percentage">85%</div>
-      <div class="text">Communication</div>
-    </div>
+    <!-- Soft Skills -->
+    <div class="skills-card skills-card-2">
+        <h3>Soft Skills</h3>
+        <ul class="soft-skills-list">
+            <li>Problem-Solving</li>
+            <li>Self-Learning</li>
+            <li>Teamwork</li>
+            <li>Decision-Making</li>
+        </ul>
 
-    <!-- Skill 3 -->
-    <div class="radial-bars">
-      <svg viewBox="0 0 200 200">
-        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-      </svg>
-      <div class="percentage">95%</div>
-      <div class="text">Problem Solving</div>
+        <h3>Relevant Coursework</h3>
+        <ul class="coursework-list">
+            <li>Data Structures & Algorithms</li>
+            <li>Database Management System</li>
+            <li>Operating System</li>
+            <li>Object-Oriented Programming</li>
+            <li>Software Engineering</li>
+        </ul>
     </div>
-
-    <!-- Skill 4 -->
-    <div class="radial-bars">
-      <svg viewBox="0 0 200 200">
-        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-      </svg>
-      <div class="percentage">90%</div>
-      <div class="text">Teamwork</div>
-    </div>
-  </div>
 </div>
 
-        </div>
-    </section>
-    <section>
+</section>
+
+    <section id="projects">
+        
         <div id="portfolio" id="project">
             <div class="main-text" id="project">
                 <h2>Latest  <span>Project</span></h2>
